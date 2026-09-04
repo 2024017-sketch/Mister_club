@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deja tu testimonio | Mister Club</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="../img/logo.png" alt="Mister Club"></div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="galeria.html">Galer&iacute;a</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="login-btn"><i class="fa-solid fa-user-large"></i> Iniciar sesi&oacute;n</a>
+        </div>
+    </header>
+
+    <main class="pagina-testimonio">
+        <section class="encabezado-testimonio">
+            <p class="etiqueta">MISTER CLUB</p>
+            <h1>CU&Eacute;NTANOS TU EXPERIENCIA</h1>
+            <p>Tu opini&oacute;n ayuda a seguir creando noches inolvidables.</p>
+        </section>
+
+        <section class="panel-testimonio">
+            <h2>DEJA TU TESTIMONIO</h2>
+            <form id="form-testimonio">
+                <label for="nombre-testimonio">Tu nombre</label>
+                <input id="nombre-testimonio" name="nombre" type="text" maxlength="40" placeholder="Ej.: Valeria R." required>
+
+                <fieldset class="selector-estrellas">
+                    <legend>&iquest;Cu&aacute;ntas estrellas nos das?</legend>
+                    <div id="estrellas-formulario" aria-label="Calificaci&oacute;n">
+                        <button type="button" class="estrella" data-valor="1" aria-label="1 estrella">&#9733;</button>
+                        <button type="button" class="estrella" data-valor="2" aria-label="2 estrellas">&#9733;</button>
+                        <button type="button" class="estrella" data-valor="3" aria-label="3 estrellas">&#9733;</button>
+                        <button type="button" class="estrella" data-valor="4" aria-label="4 estrellas">&#9733;</button>
+                        <button type="button" class="estrella" data-valor="5" aria-label="5 estrellas">&#9733;</button>
+                    </div>
+                    <input id="calificacion" name="calificacion" type="hidden" required>
+                </fieldset>
+
+                <label for="comentario-testimonio">Tu comentario</label>
+                <textarea id="comentario-testimonio" name="comentario" rows="5" maxlength="500" placeholder="Cu&eacute;ntanos c&oacute;mo fue tu experiencia..." required></textarea>
+                <button class="boton-enviar-testimonio" type="submit">PUBLICAR TESTIMONIO</button>
+                <p id="mensaje-formulario" class="mensaje-formulario" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="lista-testimonios" aria-labelledby="titulo-comunidad">
+            <div class="titulo-comunidad">
+                <div>
+                    <p class="etiqueta">COMUNIDAD MISTER</p>
+                    <h2 id="titulo-comunidad">OPINIONES DE NUESTROS CLIENTES</h2>
+                </div>
+                <a href="testimonios.html">Ver todos</a>
+            </div>
+            <div id="testimonios-publicados" class="testimonios-publicados"></div>
+        </section>
+    </main>
+
+    <script src="../js/api-client.js"></script>
+    <script src="../js/dejar-testimonio.js"></script>
+    <script src="../js/responsive.js"></script>
+</body>
+</html>
+
+
+

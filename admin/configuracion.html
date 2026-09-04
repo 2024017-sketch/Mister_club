@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | Mister Club</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="admin">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="../img/logo.png" alt="Mister Club">
+            </div>
+
+            <ul>
+
+                <li onclick="window.location.href='dashboard.html'">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li onclick="window.location.href='reservas.html'">
+                    <i class="fas fa-calendar-check"></i>
+                    Reservas
+                </li>
+
+                <li onclick="window.location.href='eventos.html'">
+                    <i class="fas fa-calendar"></i>
+                    Eventos
+                </li>
+
+                <li onclick="window.location.href='galeria.html'">
+                    <i class="fas fa-image"></i>
+                    Galer&iacute;a
+                </li>
+
+                <li onclick="window.location.href='promociones.html'">
+                    <i class="fas fa-tags"></i>
+                    Promociones
+                </li>
+                <li onclick="window.location.href='carta.html'">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    Carta
+
+                </li>
+                <li onclick="window.location.href='testimonio.html'">
+                    <i class="fas fa-comment-dots"></i>
+                    Testimonios
+                </li>
+
+                <li onclick="window.location.href='usuarios.html'">
+                    <i class="fas fa-users"></i>
+                    Usuarios
+                </li>
+
+                <li class="activo">
+                    <i class="fas fa-gear"></i>
+                    Configuraci&oacute;n
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Configuraci&oacute;n &#9881;</h1>
+
+                    <p>
+                        Administra la informaci&oacute;n general de Mister Club.
+                    </p>
+
+                </div>
+
+                <div class="usuario">
+
+                    <i class="fas fa-user-circle"></i>
+
+                    Admin
+
+                </div>
+
+            </header>
+
+
+            <div class="panel">
+
+                <h2>Informaci&oacute;n del Local</h2>
+
+                <form class="config-form">
+
+                    <label>Nombre del Local</label>
+                    <input type="text" value="Mister Club">
+
+                    <label>Direcci&oacute;n</label>
+                    <input type="text" value="Av. La Cultura G.A.L.">
+
+                    <label>Tel&eacute;fono</label>
+                    <input type="text" value="+51 912 345 678">
+
+                    <label>Correo Electr&oacute;nico</label>
+                    <input type="email" value="info@misterclub.com">
+
+                    <label>Horario</label>
+                    <input type="text" value="7:00 PM - 5:00 AM">
+
+                    <div class="acciones-config">
+
+                        <button type="submit" class="btn-guardar">
+                            <i class="fas fa-save"></i>
+                            Guardar Cambios
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="panel">
+
+                <h2>Redes Sociales</h2>
+
+                <form class="config-form">
+
+                    <div class="campo">
+                        <label>Facebook</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>Instagram</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>TikTok</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>WhatsApp</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="acciones-config">
+
+                        <button type="submit" class="btn-guardar">
+                            <i class="fas fa-save"></i>
+                            Actualizar Redes
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+            <div class="panel">
+
+                <h2>Seguridad</h2>
+
+                <form class="config-form">
+
+                    <label>Usuario Administrador</label>
+                    <input type="text" value="admin">
+
+                    <label>Nueva Contrase&ntilde;a</label>
+                    <input type="password">
+
+                    <label>Confirmar Contrase&ntilde;a</label>
+                    <input type="password">
+
+                    <div class="acciones-config">
+
+                        <button type="submit" class="btn-guardar">
+                            <i class="fas fa-save"></i>
+                            Guardar Cambios
+                        </button>
+
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+    </div>
+    <script src="../js/admin-responsive.js?v=2"></script>
+</body>
+
+</html>
+
+
+
+

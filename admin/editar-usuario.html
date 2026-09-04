@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar usuario | Mister Club</title>
+    <link rel="stylesheet" href="css/admin.css?v=8">
+</head>
+<body class="pagina-form-reserva">
+    <main class="modal-carta-admin">
+        <a class="cerrar-form-reserva" href="usuarios.html">&times;</a>
+        <h1>Editar Usuario</h1>
+        <form class="form-carta-admin form-usuario-admin" action="usuarios.html">
+            <label for="nombre-usuario">Nombre completo</label>
+            <input id="nombre-usuario" type="text" required>
+
+            <label for="correo-usuario">Correo electr&oacute;nico</label>
+            <input id="correo-usuario" type="email" required>
+
+            <label for="telefono-usuario">Tel&eacute;fono</label>
+            <input id="telefono-usuario" type="tel">
+
+            <label for="ciudad-usuario">Ciudad</label>
+            <input id="ciudad-usuario" type="text">
+
+            <label for="password-usuario">Nueva contrase&ntilde;a</label>
+            <input id="password-usuario" type="password" placeholder="Dejar vacio para no cambiarla">
+
+            <label for="rol-usuario">Rol</label>
+            <select id="rol-usuario">
+                <option value="cliente">Cliente</option>
+                <option value="administrador">Administrador</option>
+            </select>
+
+            <div class="acciones-form-reserva">
+                <a href="usuarios.html" class="cancelar-form-reserva">Cancelar</a>
+                <button type="submit">Actualizar Usuario</button>
+            </div>
+        </form>
+    </main>
+    <script src="../js/admin-usuarios.js?v=1"></script>
+</body>
+</html>

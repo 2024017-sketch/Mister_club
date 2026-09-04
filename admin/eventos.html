@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | Eventos</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="admin">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../img/logo.png" alt="Mister Club">
+        </div>
+
+        <ul>
+
+            <li onclick="window.location.href='dashboard.html'">
+                <i class="fas fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li onclick="window.location.href='reservas.html'">
+                <i class="fas fa-calendar-check"></i>
+                Reservas
+            </li>
+
+            <li class="activo">
+                <i class="fas fa-calendar"></i>
+                Eventos
+            </li>
+
+            <li onclick="window.location.href='galeria.html'">
+                <i class="fas fa-image"></i>
+                Galer&iacute;a
+            </li>
+
+            <li onclick="window.location.href='promociones.html'">
+                <i class="fas fa-tags"></i>
+                Promociones
+            </li>
+                <li onclick="window.location.href='carta.html'">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    Carta
+
+                </li>
+            <li onclick="window.location.href='testimonio.html'">
+                <i class="fas fa-comment-dots"></i>
+                Testimonios
+            </li>
+
+            <li onclick="window.location.href='usuarios.html'">
+                <i class="fas fa-users"></i>
+                Usuarios
+            </li>
+
+            <li onclick="window.location.href='configuracion.html'">
+                <i class="fas fa-gear"></i>
+                Configuraci&oacute;n
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Gesti&oacute;n de Eventos &#127881;</h1>
+
+                <p>
+                    Administra todos los eventos publicados en Mister Club.
+                </p>
+
+            </div>
+
+                <div class="usuario">
+
+                    <i class="fas fa-user-circle"></i>
+
+                    Admin
+
+                </div>
+
+        </header>
+
+        <!-- TARJETAS -->
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fas fa-calendar"></i>
+
+                <h4>Eventos Activos</h4>
+
+                <h2>8</h2>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-fire"></i>
+
+                <h4>Pr&oacute;ximos</h4>
+
+                <h2>5</h2>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-users"></i>
+
+                <h4>Reservas</h4>
+
+                <h2>162</h2>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-eye"></i>
+
+                <h4>Visitas</h4>
+
+                <h2>3,258</h2>
+
+            </div>
+
+        </section>
+
+        <!-- BUSCAR -->
+        <section class="panel">
+
+            <h2>Buscar Evento</h2>
+
+            <div class="busqueda">
+
+                <input type="text" placeholder="Buscar evento...">
+
+                <select>
+
+                    <option>Todos</option>
+                    <option>Pr&oacute;ximos</option>
+                    <option>Finalizados</option>
+                    <option>Cancelados</option>
+
+                </select>
+
+                <button class="btn-amarillo">
+
+                    Buscar
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- TABLA -->
+        <section class="panel">
+
+            <h2>Lista de Eventos</h2>
+
+            <table class="tabla-eventos-admin">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Evento</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
+                        <th>Reservas</th>
+                        <th>Acciones</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>D&iacute;a del Padre</td>
+                        <td>21/06/2026</td>
+                        <td>8:00 PM</td>
+                        <td>
+                            <span class="estado confirmada">
+                                Activo
+                            </span>
+                        </td>
+                        <td>45</td>
+
+                        <td class="acciones-reserva">
+                            <a class="btn-editar-reserva" href="editar-evento.html">Editar</a>
+                            <a class="btn-eliminar-reserva" href="eliminacion-evento.html" aria-label="Eliminar evento D&iacute;a del Padre"><i class="fas fa-trash"></i></a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Fiesta Neon</td>
+                        <td>15/07/2026</td>
+                        <td>9:00 PM</td>
+                        <td>
+                            <span class="estado pendiente">
+                                Pr&oacute;ximo
+                            </span>
+                        </td>
+                        <td>63</td>
+
+                        <td class="acciones-reserva">
+                            <a class="btn-editar-reserva" href="editar-evento.html">Editar</a>
+                            <a class="btn-eliminar-reserva" href="eliminacion-evento.html" aria-label="Eliminar evento Fiesta Neon"><i class="fas fa-trash"></i></a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Halloween Party</td>
+                        <td>31/10/2026</td>
+                        <td>10:00 PM</td>
+                        <td>
+                            <span class="estado cancelada">
+                                Finalizado
+                            </span>
+                        </td>
+                        <td>180</td>
+
+                        <td class="acciones-reserva">
+                            <a class="btn-editar-reserva" href="editar-evento.html">Editar</a>
+                            <a class="btn-eliminar-reserva" href="eliminacion-evento.html" aria-label="Eliminar evento Halloween Party"><i class="fas fa-trash"></i></a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- BOTONES -->
+        <section class="panel">
+
+            <div class="acciones-dashboard">
+
+                <a class="btn-amarillo nueva-reserva-admin" href="nuevo-evento.html">
+
+                    <i class="fas fa-plus"></i>
+
+                    Nuevo Evento
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/eventos-api.js?v=2"></script>
+    <script src="../js/admin-responsive.js?v=2"></script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | Mister Club</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <img src="../img/logo.png">
+
+            </div>
+
+            <ul>
+
+                <li onclick="window.location.href='dashboard.html'">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li onclick="window.location.href='reservas.html'">
+                    <i class="fas fa-calendar-check"></i>
+                    Reservas
+                </li>
+
+                <li onclick="window.location.href='eventos.html'">
+                    <i class="fas fa-calendar-days"></i>
+                    Eventos
+                </li>
+
+                <li onclick="window.location.href='galeria.html'">
+                    <i class="fas fa-images"></i>
+                    Galer&iacute;a
+                </li>
+
+                <li onclick="window.location.href='promociones.html'">
+                    <i class="fas fa-tags"></i>
+                    Promociones
+                </li>
+                <li class="activo">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    Carta
+
+                </li>
+
+                <li onclick="window.location.href='testimonio.html'">
+                    <i class="fas fa-comment-dots"></i>
+                    Testimonios
+                </li>
+
+                <li onclick="window.location.href='usuarios.html'">
+                    <i class="fas fa-users"></i>
+                    Usuarios
+                </li>
+
+                <li onclick="window.location.href='configuracion.html'">
+                    <i class="fas fa-gear"></i>
+                    Configuraci&oacute;n
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Gesti&oacute;n de Carta &#127865;</h1>
+
+                    <p>
+                        Administra las bebidas y productos disponibles en la carta de Mister Club.
+                    </p>
+
+                </div>
+
+                <div class="usuario">
+
+                    <i class="fas fa-user-circle"></i>
+
+                    Admin
+
+                </div>
+
+            </header>
+
+            <!-- TARJETAS -->
+
+            <section class="cards">
+
+                <div class="card">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    <h4>Total de Productos</h4>
+
+                    <h2>35</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fas fa-layer-group"></i>
+
+                    <h4>Categor&iacute;as</h4>
+
+                    <h2>4</h2>
+
+                </div>
+
+
+            </section>
+
+            <!-- NUEVO PRODUCTO -->
+
+            <section class="panel">
+
+               <h2>Agregar Producto</h2>
+
+<div class="form-admin">
+
+    <input type="text" placeholder="Nombre de la bebida">
+
+    <select>
+
+        <option>Bebidas 1 LT</option>
+        <option>Bebidas</option>
+        <option>Cocktails</option>
+        <option>Botellas</option>
+
+    </select>
+
+    <input type="text" placeholder="Precio">
+
+    <button class="btn-amarillo">
+
+        <i class="fas fa-plus"></i>
+
+        Agregar Producto
+
+    </button>
+
+</div>
+
+            </section>
+
+            <!-- TABLA -->
+
+            <section class="panel">
+
+                <h2>Productos Registrados</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Producto</th>
+                            <th>Categor&iacute;a</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Cuba Libre 1 LT</td>
+
+                            <td>Bebidas 1 LT</td>
+
+                            <td>S/.26</td>
+
+
+                            <td class="acciones-reserva">
+                                <a class="btn-editar-reserva" href="editar-carta.html">Editar</a>
+                                <a class="btn-eliminar-reserva" href="eliminacion-carta.html" aria-label="Eliminar Cuba Libre 1 LT"><i class="fas fa-trash"></i></a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Mojito 1 LT</td>
+
+                            <td>Cocktails</td>
+
+                            <td>S/.30</td>
+
+
+                            <td class="acciones-reserva">
+                                <a class="btn-editar-reserva" href="editar-carta.html">Editar</a>
+                                <a class="btn-eliminar-reserva" href="eliminacion-carta.html" aria-label="Eliminar Mojito 1 LT"><i class="fas fa-trash"></i></a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Johnnie Walker Black</td>
+
+                            <td>Botellas</td>
+
+                            <td>S/.170</td>
+
+                            <td class="acciones-reserva">
+                                <a class="btn-editar-reserva" href="editar-carta.html">Editar</a>
+                                <a class="btn-eliminar-reserva" href="eliminacion-carta.html" aria-label="Eliminar Johnnie Walker Black"><i class="fas fa-trash"></i></a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+    <script src="../js/admin-responsive.js?v=2"></script>
+</body>
+
+</html>
+
+
+

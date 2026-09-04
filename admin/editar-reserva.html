@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar reserva | Mister Club</title>
+    <link rel="stylesheet" href="css/admin.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="pagina-form-reserva">
+    <main class="modal-reserva-admin" aria-labelledby="titulo-editar-reserva">
+        <a class="cerrar-form-reserva" href="reservas.html" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></a>
+        <h1 id="titulo-editar-reserva">Editar Reserva</h1>
+        <form class="form-reserva-admin" action="reservas.html">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" name="cliente" type="text" required>
+
+            <label for="correo">Correo del usuario</label>
+            <input id="correo" name="correo" type="email" readonly>
+
+            <label for="telefono">Telefono</label>
+            <input id="telefono" name="telefono" type="tel" required>
+
+            <div class="campos-reserva-admin">
+                <div><label for="fecha">Fecha</label><input id="fecha" name="fecha" type="date" required></div>
+                <div><label for="hora">Hora</label><input id="hora" name="hora" type="time" required></div>
+            </div>
+
+            <div class="campos-reserva-admin">
+                <div><label for="mesa">Mesa</label><select id="mesa" name="mesa" required><option value="">Seleccionar mesa</option><option>Mesa para 2 personas</option><option>Mesa para 4 personas</option><option>Mesa para 6 personas</option><option>Mesa para 8 personas</option></select></div>
+                <div><label for="personas">Personas</label><input id="personas" name="personas" type="number" min="1" required></div>
+            </div>
+
+            <label for="mensaje">Motivo o mensaje</label>
+            <input id="mensaje" name="mensaje" type="text">
+
+            <label for="estado-reserva">Estado</label>
+            <select id="estado-reserva" name="estado"><option value="pendiente">Pendiente</option><option value="confirmada">Confirmada</option><option value="cancelada">Cancelada</option></select>
+
+            <div class="acciones-form-reserva"><a href="reservas.html" class="cancelar-form-reserva">Cancelar</a><button type="submit">Actualizar Reserva</button></div>
+        </form>
+    </main>
+    <script src="../js/admin-reservas.js?v=5"></script>
+</body>
+</html>
+
+
+

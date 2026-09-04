@@ -1,0 +1,14 @@
+[17-Jul-2026 00:16:07 UTC] Mister Club API: SQLSTATE[HY000] [1045] Access denied for user 'epaccoh@apstivigil.edu.pe'@'hd-4918.banahosting.com' (using password: YES)
+[17-Jul-2026 00:17:16 UTC] Mister Club API: SQLSTATE[HY000] [1045] Access denied for user 'epaccoh@apstivigil.edu.pe'@'hd-4918.banahosting.com' (using password: YES)
+[17-Jul-2026 00:28:58 UTC] Mister Club API: SQLSTATE[HY000] [1045] Access denied for user 'epaccoh@apstivigil.edu.pe'@'hd-4918.banahosting.com' (using password: YES)
+[17-Jul-2026 00:29:18 UTC] Mister Club API: SQLSTATE[HY000] [1045] Access denied for user 'epaccoh@apstivigil.edu.pe'@'hd-4918.banahosting.com' (using password: YES)
+[17-Jul-2026 00:29:51 UTC] Mister Club API: SQLSTATE[HY000] [1045] Access denied for user 'epaccoh@apstivigil.edu.pe'@'hd-4918.banahosting.com' (using password: YES)
+[17-Jul-2026 00:29:59 UTC] Mister Club API: SQLSTATE[HY000] [1045] Access denied for user 'epaccoh@apstivigil.edu.pe'@'hd-4918.banahosting.com' (using password: YES)
+[17-Jul-2026 05:54:45 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 05:56:24 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 05:56:43 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 05:57:00 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 06:12:03 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 06:12:09 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 06:28:35 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous
+[17-Jul-2026 06:28:53 UTC] Mister Club API: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in WHERE is ambiguous

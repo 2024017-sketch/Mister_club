@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesti&oacute;n de testimonios | Mister Club</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo"><img src="../img/logo.png" alt="Mister Club"></div>
+            <ul>
+                <li onclick="window.location.href='dashboard.html'"><i class="fas fa-chart-line"></i>Dashboard</li>
+                <li onclick="window.location.href='reservas.html'"><i class="fas fa-calendar-check"></i>Reservas</li>
+                <li onclick="window.location.href='eventos.html'"><i class="fas fa-calendar-days"></i>Eventos</li>
+                <li onclick="window.location.href='galeria.html'"><i class="fas fa-images"></i>Galer&iacute;a</li>
+                <li onclick="window.location.href='promociones.html'"><i class="fas fa-tags"></i>Promociones</li>
+                <li onclick="window.location.href='carta.html'"><i class="fas fa-wine-glass"></i>Carta</li>
+                <li class="activo"><i class="fas fa-comment-dots"></i>Testimonios</li>
+                <li onclick="window.location.href='usuarios.html'"><i class="fas fa-users"></i>Usuarios</li>
+                <li onclick="window.location.href='configuracion.html'"><i class="fas fa-gear"></i>Configuraci&oacute;n</li>
+            </ul>
+        </aside>
+
+        <main class="contenido testimonios-admin">
+            <header>
+                <div>
+                    <h1>Gesti&oacute;n de Testimonios <i class="fa-regular fa-comments"></i></h1>
+                    <p>Administra los comentarios y respuestas de los clientes.</p>
+                </div>
+                <div class="usuario"><i class="fas fa-user-circle"></i> Admin</div>
+            </header>
+
+            <section class="resumen-testimonios" aria-label="Resumen de testimonios">
+                <article class="resumen-testimonio morado"><i class="fa-regular fa-comment-dots"></i><div><span>Total de testimonios</span><strong>128</strong><small>Todos los comentarios</small></div></article>
+                <article class="resumen-testimonio amarillo"><i class="fa-regular fa-clock"></i><div><span>Pendientes</span><strong>15</strong><small>Comentarios sin responder</small></div></article>
+                <article class="resumen-testimonio verde"><i class="fa-regular fa-circle-check"></i><div><span>Respondidos</span><strong>113</strong><small>Comentarios respondidos</small></div></article>
+                <article class="resumen-testimonio amarillo"><i class="fa-regular fa-star"></i><div><span>Calificaci&oacute;n promedio</span><strong>4.8</strong><small class="estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</small></div></article>
+            </section>
+
+            <section class="filtros-testimonios" aria-label="Filtros de testimonios">
+                <label class="buscar-testimonio"><i class="fa-solid fa-magnifying-glass"></i><input id="buscar-testimonio" type="search" placeholder="Buscar testimonio..."></label>
+                <select id="filtro-estado" aria-label="Filtrar por estado"><option value="todos">Todos los estados</option><option value="pendiente">Pendientes</option><option value="respondido">Respondidos</option></select>
+                <select id="filtro-calificacion" aria-label="Filtrar por calificaci&oacute;n"><option value="todos">Todas las calificaciones</option><option value="5">5 estrellas</option><option value="4">4 estrellas</option><option value="3">3 estrellas</option></select>
+                <button class="buscar-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+            </section>
+
+            <section class="lista-testimonios-admin" aria-labelledby="titulo-lista">
+                <h2 id="titulo-lista" class="visualmente-oculto">Lista de testimonios</h2>
+                <div class="cabecera-testimonios"><span>Cliente</span><span>Fecha</span><span>Calificaci&oacute;n</span><span>Comentario</span><span>Estado</span><span>Acciones</span></div>
+
+                <article class="fila-testimonio" data-estado="respondido" data-calificacion="5" data-busqueda="Fiorella Pacco excelente ambiente musica increible">
+                    <div class="cliente-testimonio"><b class="avatar-inicial">FP</b><span><strong>Fiorella Pacco</strong><small>fiorella@example.com</small></span></div><time datetime="2026-07-15">15 Jul 2026<br><small>22:45</small></time><span class="estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>&iexcl;Excelente ambiente, la m&uacute;sica estuvo incre&iacute;ble! Sin duda volver&eacute;.</p><span class="estado respondido">Respondido</span><div class="acciones-testimonio"><button title="Responder" class="responder"><i class="fa-regular fa-comment-dots"></i></button><button title="Borrar" class="borrar"><i class="fa-regular fa-trash-can"></i></button></div>
+                </article>
+                <article class="fila-testimonio" data-estado="respondido" data-calificacion="4" data-busqueda="Carlos Mendez buen servicio atencion recomiendo">
+                    <div class="cliente-testimonio"><b class="avatar-inicial azul">CM</b><span><strong>Carlos Mendez</strong><small>carlos@example.com</small></span></div><time datetime="2026-07-14">14 Jul 2026<br><small>20:30</small></time><span class="estrellas">&#9733;&#9733;&#9733;&#9733;<i>&#9733;</i></span><p>Muy buen servicio y atenci&oacute;n. Lo recomiendo al 100%.</p><span class="estado respondido">Respondido</span><div class="acciones-testimonio"><button title="Responder" class="responder"><i class="fa-regular fa-comment-dots"></i></button><button title="Borrar" class="borrar"><i class="fa-regular fa-trash-can"></i></button></div>
+                </article>
+                <article class="fila-testimonio" data-estado="pendiente" data-calificacion="3" data-busqueda="Mar&iacute;a Fernanda lugar bonito musica podria mejorar">
+                    <div class="cliente-testimonio"><b class="avatar-inicial rosa">MF</b><span><strong>Mar&iacute;a Fernanda</strong><small>maria@example.com</small></span></div><time datetime="2026-07-13">13 Jul 2026<br><small>19:15</small></time><span class="estrellas">&#9733;&#9733;&#9733;<i>&#9733;&#9733;</i></span><p>El lugar es bonito, pero la m&uacute;sica podr&iacute;a mejorar.</p><span class="estado pendiente">Pendiente</span><div class="acciones-testimonio"><button title="Responder" class="responder"><i class="fa-regular fa-comment-dots"></i></button><button title="Borrar" class="borrar"><i class="fa-regular fa-trash-can"></i></button></div>
+                </article>
+                <article class="fila-testimonio" data-estado="pendiente" data-calificacion="4" data-busqueda="Andrea Castillo buena musica ambiente tardaron atender">
+                    <div class="cliente-testimonio"><b class="avatar-inicial naranja">AC</b><span><strong>Andrea Castillo</strong><small>andrea@example.com</small></span></div><time datetime="2026-07-11">11 Jul 2026<br><small>21:10</small></time><span class="estrellas">&#9733;&#9733;&#9733;&#9733;<i>&#9733;</i></span><p>Buena m&uacute;sica y buen ambiente, pero tardaron un poco en atender.</p><span class="estado pendiente">Pendiente</span><div class="acciones-testimonio"><button title="Responder" class="responder"><i class="fa-regular fa-comment-dots"></i></button><button title="Borrar" class="borrar"><i class="fa-regular fa-trash-can"></i></button></div>
+                </article>
+                <p class="sin-resultados" hidden>No se encontraron testimonios con esos filtros.</p>
+            </section>
+
+            <dialog class="dialogo-respuesta" id="dialogo-respuesta">
+                <form method="dialog"><button class="cerrar-dialogo" type="button" aria-label="Cerrar" onclick="this.closest('dialog').close()">&times;</button><h2>Responder testimonio</h2><p id="cliente-respuesta"></p><textarea id="texto-respuesta" placeholder="Escribe la respuesta para el cliente..." required></textarea><button class="guardar-respuesta" value="guardar">Enviar respuesta</button></form>
+            </dialog>
+        </main>
+    </div>
+    <script src="../js/admin-responsive.js?v=2"></script>
+    <script>
+        const filas = [...document.querySelectorAll('.fila-testimonio')];
+        const texto = document.querySelector('#buscar-testimonio');
+        const estado = document.querySelector('#filtro-estado');
+        const calificacion = document.querySelector('#filtro-calificacion');
+        const vacio = document.querySelector('.sin-resultados');
+        function filtrar() {
+            let visibles = 0; const busqueda = texto.value.toLowerCase().trim();
+            filas.forEach(fila => { const mostrar = (!busqueda || fila.dataset.busqueda.toLowerCase().includes(busqueda)) && (estado.value === 'todos' || fila.dataset.estado === estado.value) && (calificacion.value === 'todos' || fila.dataset.calificacion === calificacion.value); fila.hidden = !mostrar; if (mostrar) visibles++; });
+            vacio.hidden = visibles !== 0;
+        }
+        [texto, estado, calificacion].forEach(control => control.addEventListener('input', filtrar));
+        document.querySelector('.buscar-btn').addEventListener('click', filtrar);
+        const dialogo = document.querySelector('#dialogo-respuesta'); let filaActiva;
+        document.querySelectorAll('.responder').forEach(boton => boton.addEventListener('click', () => { filaActiva = boton.closest('.fila-testimonio'); document.querySelector('#cliente-respuesta').textContent = 'Respuesta para ' + filaActiva.querySelector('.cliente-testimonio strong').textContent; dialogo.showModal(); }));
+        dialogo.addEventListener('close', () => { if (dialogo.returnValue === 'guardar' && filaActiva) { filaActiva.dataset.estado = 'respondido'; const etiqueta = filaActiva.querySelector('.estado'); etiqueta.textContent = 'Respondido'; etiqueta.className = 'estado respondido'; document.querySelector('#texto-respuesta').value = ''; filtrar(); } });
+        document.querySelectorAll('.borrar').forEach(boton => boton.addEventListener('click', () => { if (confirm('&iquest;Deseas eliminar este testimonio?')) boton.closest('.fila-testimonio').remove(); filtrar(); }));
+    </script>
+</body>
+</html>
+
+
+
+

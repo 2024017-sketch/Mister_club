@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | Mister Club</title>
+
+    <link rel="stylesheet" href="css/admin.css?v=8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <img src="../img/logo.png">
+
+            </div>
+
+            <ul>
+
+                <li class="activo">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li onclick="window.location.href='reservas.html'">
+                    <i class="fas fa-calendar-check"></i>
+                    Reservas
+                </li>
+
+                <li onclick="window.location.href='eventos.html'">
+                    <i class="fas fa-calendar-days"></i>
+                    Eventos
+                </li>
+
+                <li onclick="window.location.href='galeria.html'">
+                    <i class="fas fa-images"></i>
+                    Galer&iacute;a
+                </li>
+
+                <li onclick="window.location.href='promociones.html'">
+                    <i class="fas fa-tags"></i>
+                    Promociones
+                </li>
+                <li onclick="window.location.href='carta.html'">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    Carta
+
+                </li>
+                <li onclick="window.location.href='testimonio.html'">
+                    <i class="fas fa-comment-dots"></i>
+                    Testimonios
+                </li>
+
+                <li onclick="window.location.href='usuarios.html'">
+                    <i class="fas fa-users"></i>
+                    Usuarios
+                </li>
+
+                <li onclick="window.location.href='configuracion.html'">
+                    <i class="fas fa-gear"></i>
+                    Configuraci&oacute;n
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <!-- CONTENIDO -->
+
+        <main class="contenido">
+
+            <header>
+
+                <div>
+
+                    <h1>Bienvenido, Administrador &#128075;</h1>
+
+                    <p>Panel de control de Mister Club</p>
+
+                </div>
+
+                <div class="usuario">
+
+                    <i class="fas fa-user-circle"></i>
+
+                    Admin
+
+                </div>
+
+            </header>
+
+
+            <!-- TARJETAS -->
+
+            <section class="cards">
+
+                <div class="card">
+
+                    <i class="fas fa-calendar-check"></i>
+
+                    <h3>Reservas Hoy</h3>
+
+                    <span data-dashboard-count="reservas-hoy">0</span>
+
+                </div>
+
+
+                <div class="card">
+
+                    <i class="fas fa-users"></i>
+
+                    <h3>Usuarios</h3>
+
+                    <span data-dashboard-count="usuarios">0</span>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- DOS COLUMNAS -->
+
+            <section class="contenedor">
+
+                <!-- IZQUIERDA -->
+
+                <div class="izquierda">
+
+                    <div class="panel">
+
+                        <h2>Resumen General</h2>
+
+                        <div class="resumen-dashboard">
+                            <article>
+                                <span data-dashboard-count="reservas-total">0</span>
+                                <small>Total reservas</small>
+                            </article>
+                            <article>
+                                <span data-dashboard-count="reservas-pendientes">0</span>
+                                <small>Pendientes</small>
+                            </article>
+                            <article>
+                                <span data-dashboard-count="reservas-confirmadas">0</span>
+                                <small>Confirmadas</small>
+                            </article>
+                            <article>
+                                <span data-dashboard-count="eventos-activos">0</span>
+                                <small>Eventos activos</small>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <div class="panel">
+
+                        <h2>Reservas Recientes</h2>
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Mesa</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+
+                            <tbody data-dashboard-reservas>
+                                <tr><td colspan="3">Cargando reservas...</td></tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DERECHA -->
+
+                <div class="derecha">
+
+                    <div class="panel">
+
+                        <h2>Pr&oacute;ximos Eventos</h2>
+
+                        <ul data-dashboard-eventos>
+                            <li>Cargando eventos...</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="panel">
+
+                        <h2>Acciones R&aacute;pidas</h2>
+
+                        <div class="acciones">
+
+                            <button type="button" onclick="window.location.href='nuevo-evento.html'">
+                                Nuevo Evento
+                            </button>
+
+                            <button type="button" onclick="window.location.href='nueva-reserva.html'">
+                                Nueva Reserva
+                            </button>
+
+                            <button type="button" onclick="window.location.href='galeria.html'">
+                                Subir Fotos
+                            </button>
+
+                            <button type="button" onclick="window.location.href='nueva-promocion.html'">
+                                Promoci&oacute;n
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/admin-responsive.js?v=2"></script>
+    <script src="../js/admin-dashboard.js?v=1"></script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | Usuarios</title>
+
+    <link rel="stylesheet" href="css/admin.css?v=8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin">
+
+        <!-- panel -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="../img/logo.png" alt="Mister Club">
+            </div>
+
+            <ul>
+
+                <li onclick="window.location.href='dashboard.html'">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li onclick="window.location.href='reservas.html'">
+                    <i class="fas fa-calendar-check"></i>
+                    Reservas
+                </li>
+
+                <li onclick="window.location.href='eventos.html'">
+                    <i class="fas fa-calendar"></i>
+                    Eventos
+                </li>
+
+                <li onclick="window.location.href='galeria.html'">
+                    <i class="fas fa-image"></i>
+                    Galer&iacute;a
+                </li>
+
+                <li onclick="window.location.href='promociones.html'">
+                    <i class="fas fa-tags"></i>
+                    Promociones
+                </li>
+                <li onclick="window.location.href='carta.html'">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    Carta
+
+                </li>
+                <li onclick="window.location.href='testimonio.html'">
+                    <i class="fas fa-comment-dots"></i>
+                    Testimonios
+                </li>
+
+                <li class="activo">
+                    <i class="fas fa-users"></i>
+                    Usuarios
+                </li>
+
+                <li onclick="window.location.href='configuracion.html'">
+                    <i class="fas fa-gear"></i>
+                    Configuraci&oacute;n
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Gesti&oacute;n de Usuarios &#128101;</h1>
+
+                    <p>Administra los usuarios registrados en Mister Club.</p>
+
+                </div>
+
+                <div class="usuario">
+
+                    <i class="fas fa-user-circle"></i>
+
+                    Admin
+
+                </div>
+
+            </header>
+
+            <!-- TARJETAS -->
+
+            <section class="cards">
+
+                <div class="card">
+
+                    <i class="fas fa-users"></i>
+
+                    <h4>Total Usuarios</h4>
+
+                    <h2 data-usuarios-total>0</h2>
+
+                </div>
+
+
+            </section>
+
+            <!-- BUSCADOR -->
+
+            <section class="panel">
+
+                <h2>Buscar Usuario</h2>
+
+                <div class="busqueda">
+
+                    <input id="buscar-usuario" type="text" placeholder="Buscar por nombre o correo...">
+
+                    <select id="filtro-rol-usuario">
+
+                        <option value="">Todos</option>
+                        <option value="cliente">Clientes</option>
+                        <option value="administrador">Administradores</option>
+
+                    </select>
+
+                    <button class="btn-amarillo" id="btn-buscar-usuario" type="button">
+
+                        Buscar
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- TABLA -->
+
+            <section class="panel">
+
+                <h2>Lista de Usuarios</h2>
+
+                <table class="tabla-usuarios-admin">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Tel&eacute;fono</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr><td colspan="5">Cargando usuarios...</td></tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- BOTONES -->
+
+            <section class="panel">
+
+                <div class="acciones-dashboard">
+
+                    <a class="btn-amarillo nueva-reserva-admin" href="nuevo-usuario.html">
+
+                        <i class="fas fa-user-plus"></i>
+
+                        Nuevo Usuario
+
+                    </a>
+
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/admin-responsive.js?v=2"></script>
+    <script src="../js/admin-usuarios.js?v=1"></script>
+</body>
+
+</html>
+
+
+

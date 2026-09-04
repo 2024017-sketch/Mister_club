@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesti&oacute;n de promociones | Mister Club</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="admin">
+        <aside class="sidebar">
+            <div class="logo"><img src="../img/logo.png" alt="Mister Club"></div>
+            <ul>
+                <li onclick="window.location.href='dashboard.html'"><i class="fas fa-chart-line"></i>Dashboard</li>
+                <li onclick="window.location.href='reservas.html'"><i class="fas fa-calendar-check"></i>Reservas</li>
+                <li onclick="window.location.href='eventos.html'"><i class="fas fa-calendar-days"></i>Eventos</li>
+                <li onclick="window.location.href='galeria.html'"><i class="fas fa-images"></i>Galer&iacute;a</li>
+                <li class="activo"><i class="fas fa-tags"></i>Promociones</li>
+                <li onclick="window.location.href='carta.html'"><i class="fas fa-wine-glass"></i>Carta</li>
+                <li onclick="window.location.href='testimonio.html'"><i class="fas fa-comment-dots"></i>Testimonios</li>
+                <li onclick="window.location.href='usuarios.html'"><i class="fas fa-users"></i>Usuarios</li>
+                <li onclick="window.location.href='configuracion.html'"><i class="fas fa-gear"></i>Configuraci&oacute;n</li>
+            </ul>
+        </aside>
+        <main class="contenido promociones-panel">
+            <header class="topbar promos-encabezado">
+                <div><h1>Gesti&oacute;n de Promociones <i class="fa-solid fa-tags"></i></h1><p>Administra las promociones publicadas en Mister Club.</p></div>
+                <div class="usuario"><i class="fas fa-user-circle"></i> Admin</div>
+            </header>
+            <section class="promo-resumen"><i class="fa-solid fa-tags"></i><strong>16</strong><span>Total promociones</span><a href="nueva-promocion.html"><i class="fa-solid fa-plus"></i> Nueva Promoci&oacute;n</a></section>
+            <section class="promo-filtros"><label><i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Buscar promoci&oacute;n..."></label><select><option>Ordenar por: M&aacute;s recientes</option><option>Ordenar por: M&aacute;s antiguas</option><option>Ordenar por: T&iacute;tulo</option></select></section>
+            <section class="lista-promociones-admin">
+                <div class="promo-cabecera"><span>Imagen</span><span>T&iacute;tulo</span><span>Descripci&oacute;n</span><span>Horario</span><span>Acciones</span></div>
+                <article class="promo-fila"><img src="../img/promociones/promo1.jpg" alt="Promoci&oacute;n Mojito 2x50"><strong>Mojito 2x50</strong><p>Disfruta nuestros mojitos todos los d&iacute;as con esta s&uacute;per promoci&oacute;n.</p><span><i class="fa-regular fa-clock"></i> Todos los d&iacute;as<br>hasta las 11:00 PM</span><div><a href="editar-promocion.html" class="accion-promo editar-promo"><i class="fa-regular fa-pen-to-square"></i> Editar</a><a href="eliminacion-promocion.html" class="accion-promo eliminar-promo"><i class="fa-regular fa-trash-can"></i> Eliminar</a></div></article>
+                <article class="promo-fila"><img src="../img/promociones/promo1.jpg" alt="Promoci&oacute;n Ron y Vodka 2x40"><strong>Ron y Vodka 2x40</strong><p>Promoci&oacute;n especial en ron y vodka.</p><span><i class="fa-regular fa-clock"></i> Todos los d&iacute;as<br>hasta las 11:00 PM</span><div><a href="editar-promocion.html" class="accion-promo editar-promo"><i class="fa-regular fa-pen-to-square"></i> Editar</a><a href="eliminacion-promocion.html" class="accion-promo eliminar-promo"><i class="fa-regular fa-trash-can"></i> Eliminar</a></div></article>
+                <article class="promo-fila"><img src="../img/promociones/promo1.jpg" alt="Promoci&oacute;n Happy Hour"><strong>Happy Hour</strong><p>2x1 en tragos seleccionados de 5:00 PM a 8:00 PM.</p><span><i class="fa-regular fa-clock"></i> Lunes a Viernes<br>5:00 PM - 8:00 PM</span><div><a href="editar-promocion.html" class="accion-promo editar-promo"><i class="fa-regular fa-pen-to-square"></i> Editar</a><a href="eliminacion-promocion.html" class="accion-promo eliminar-promo"><i class="fa-regular fa-trash-can"></i> Eliminar</a></div></article>
+            </section>
+        </main>
+    </div>
+    <script src="../js/admin-responsive.js?v=2"></script>
+</body>
+</html>
+
+
+

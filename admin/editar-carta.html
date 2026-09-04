@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto | Mister Club</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="pagina-form-reserva">
+    <main class="modal-carta-admin" aria-labelledby="titulo-editar-producto">
+        <a class="cerrar-form-reserva" href="carta.html" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></a>
+        <h1 id="titulo-editar-producto"><i class="fa-regular fa-pen-to-square"></i> Editar Producto</h1>
+        <form class="form-carta-admin" action="carta.html">
+            <label for="producto">Producto</label>
+            <input id="producto" type="text" value="Cuba Libre 1 LT" required>
+            <div class="campos-carta-admin">
+                <div><label for="categoria">Categor&iacute;a</label><select id="categoria"><option selected>Bebidas 1 LT</option><option>Bebidas</option><option>Cocktails</option><option>Botellas</option></select></div>
+                <div><label for="precio">Precio</label><input id="precio" type="number" value="26.00" min="0" step="0.10" required></div>
+            </div>
+            <div class="acciones-form-reserva"><a href="carta.html" class="cancelar-form-reserva">Cancelar</a><button type="submit"><i class="fa-regular fa-floppy-disk"></i> Guardar cambios</button></div>
+        </form>
+    </main>
+</body>
+</html>
+

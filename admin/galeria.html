@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+    
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | Galer&iacute;a</title>
+
+    <link rel="stylesheet" href="css/admin.css?v=7">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="admin">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="../img/logo.png" alt="Mister Club">
+            </div>
+
+            <ul>
+
+                <li onclick="window.location.href='dashboard.html'">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li onclick="window.location.href='reservas.html'">
+                    <i class="fas fa-calendar-check"></i>
+                    Reservas
+                </li>
+
+                <li onclick="window.location.href='eventos.html'">
+                    <i class="fas fa-calendar"></i>
+                    Eventos
+                </li>
+
+                <li class="activo">
+                    <i class="fas fa-image"></i>
+                    Galeri­a
+                </li>
+
+                <li onclick="window.location.href='promociones.html'">
+                    <i class="fas fa-tags"></i>
+                    Promociones
+                </li>
+                <li onclick="window.location.href='carta.html'">
+
+                    <i class="fas fa-wine-glass"></i>
+
+                    Carta
+
+                </li>
+                <li onclick="window.location.href='testimonio.html'">
+                    <i class="fas fa-comment-dots"></i>
+                    Testimonios
+                </li>
+
+                <li onclick="window.location.href='usuarios.html'">
+                    <i class="fas fa-users"></i>
+                    Usuarios
+                </li>
+
+                <li onclick="window.location.href='configuracion.html'">
+                    <i class="fas fa-gear"></i>
+                    Configuración
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Gesti&oacute;n de Galer&iacute;a &#128444;</h1>
+
+                    <p>Administra las fotograf&iacute;as de Mister Club.</p>
+
+                </div>
+
+                <div class="usuario">
+
+                    <i class="fas fa-user-circle"></i>
+
+                    Admin
+
+                </div>
+
+            </header>
+
+            <!-- TARJETAS -->
+            <section class="cards">
+
+                <div class="card">
+
+                    <i class="fas fa-images"></i>
+
+                    <h4>Total de Fotos</h4>
+
+                    <h2 data-galeria-total>0</h2>
+
+                </div>
+
+
+                <div class="card">
+
+                    <i class="fas fa-eye"></i>
+
+                    <h4>Visualizaciones</h4>
+
+                    <h2>2,540</h2>
+
+                </div>
+
+
+            </section>
+
+            <!-- SUBIR FOTO -->
+            <section class="panel">
+
+                <h2>Subir Nueva Imagen</h2>
+
+                <form class="subir-imagen" action="#" enctype="multipart/form-data">
+
+                    <input type="file" name="imagen" accept="image/*" required>
+
+                    <button class="btn-amarillo">
+                        Subir Imagen
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- GALER&Iacute;A -->
+            <section class="panel">
+
+                <h2>Im&aacute;genes Publicadas</h2>
+
+                <div class="galeria-admin">
+                    <p class="sin-resultados">Cargando imagenes...</p>
+
+                </div>
+
+            </section>
+
+    
+
+        </main>
+
+    </div>
+
+    <script src="../js/admin-responsive.js?v=2"></script>
+    <script src="../js/galeria.js?v=2"></script>
+</body>
+
+</html>
+
+
+
